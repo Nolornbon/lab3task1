@@ -9,9 +9,9 @@ int main() {
 
     //calc
     double chisel = a + tan(b); // a + tan(b)                   
-    double znam = 3 * a - 4 * sqrt(a + c) + 3 * fabs(b);  // 3a - 4sqrt(a + c) + 3|b|
+    double znam = 3 * a - 4 * sqrt(a + c);  // 3a - 4sqrt(a + c) + 3|b|
 
-    double f = chisel / znam;
+    double f = chisel / znam + 3 * fabs(b);
 
     //output
     std::cout << "Function 'F' = " << f << std::endl;
